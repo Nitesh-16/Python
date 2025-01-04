@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>My-Self</title>
+    <script>
+    // Play a clip of a guinea pig squeaking when a user clicks the gpig button in the nav-bar.
+    // Audio code learned about here: https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
+    function play_sound(url) {
+      new Audio(url).play();
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Navigation bar for Pigs for Noobs! -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"><b>Hello folks!</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="behavior.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="care.html">Contact</a>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+        </ul>
+        <!-- Button/audio clip of guinea pig squeaking used in the nav-bar -->
+        <button onclick="play_sound('sounds/gpig_squeak.m4a')" type="button" class="btn btn-outline-info"><img src="images/dice.jpg" alt="Image"width="30"></button>
+      </div>
+    </nav>
+
+    <!-- Behavioral Content -->
+    <h1>My-Self</h1>
+    <!-- Personality section -->
+    <hr class="solid">
+    <p>
+      Hello! I’m passionate about coding and enjoy exploring the endless possibilities it offers.
+      I love to think critically and solve problems, whether it’s through programming or engaging in strategic mobile games.
+      In addition to my tech interests, I have a keen interest in trading, where I analyze market trends and make informed decisions.
+      On the athletic side, I practice Taekwondo, which not only keeps me fit but also teaches discipline and focus.
+      I’m always eager to learn and connect with others who share similar interests!
+    </p>
+    <!-- Animal behavior section -->
+    <h4>How can i Contribute</h4>
+    <hr class="solid">
+    <p>I am passionate about contributing to upcoming projects and thrive on interacting with people who share my enthusiasm for innovation. With a keen interest in startups, I’m always eager to explore new ideas and think outside the box.
+
+      I believe my background in [your specific skills or experiences] allows me to bring unique perspectives to the table. I enjoy collaborating in team settings, where I can share my insights and also learn from others. Whether it’s brainstorming sessions or hands-on project work, I’m excited to dive into the creative process and help turn concepts into reality.
+
+      I actively seek opportunities to engage with the startup community, whether through networking events, workshops, or online forums. I’m always on the lookout for ways to connect with like-minded individuals who are also passionate about inventing and developing new solutions.
+
+      Overall, I am committed to leveraging my skills and enthusiasm to make meaningful contributions to projects that drive innovation and create impact.
+
+      </p>
+    <ul class ="indent">
+    <hr class="solid">
+    <p>
+      Here are some great resources:
+    </p>
+    <ul style="padding-bottom: 30px">
+      <li class="indent"><a target="_blank" href="https://www.wikipedia.org/">Wikipedia</a></li>
+    </ul>
+  </body>
+</html>
