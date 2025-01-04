@@ -1,0 +1,52 @@
+<!-- Main page: An educational website about guinea pigs and how to treat them as pets. -->
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>HomePage| Home</title>
+    <script>
+    // Play a clip of a guinea pig squeaking when a user clicks the gpig button in the nav-bar.
+    // Audio code learned about here: https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
+    function play_sound(url) {
+      new Audio(url).play();
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Navigation bar for Pigs for Noobs! -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"><b>Hello folks!</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="behavior.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="care.html">Contact</a>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+        </ul>
+        <!-- Button/audio clip of guinea pig squeaking used in the nav-bar -->
+        <button onclick="play_sound('sounds/gpig_squeak.m4a')" type="button" class="btn btn-outline-info"><img src="images/dice.jpg" alt="Image " width="30"></button>
+      </div>
+    </nav>
+
+    <!-- Homepage content -->
+    <h1 style= "margin-left: 200pt;">Welcome to My Page</h1>
+    <h4 style= "margin-left: 200pt;">Myself D A AJAY from INDIA</h4>
+    <img class ="indent_img" src="images/md-arif-hossen-e13O5pbjZ0I-unsplash.jpg" alt="A Man standing in Sunrise" width="615">
+    <h6 style="margin-left: 200pt; margin-top: 15px"><em>"I am Curious to Code"</em></h6>
+    <h4 class="indent" style="margin-top: 25px; margin-bottom: 20px;">My Hobbies are</h4>
+    <hr class="solid">
+    <p class="indent" style="padding-bottom: 30px"> Coding,Gaming,Taekwondo<br><br>
+  </body>
+</html>
